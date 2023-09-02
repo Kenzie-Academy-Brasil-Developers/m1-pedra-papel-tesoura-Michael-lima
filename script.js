@@ -20,7 +20,7 @@ function playRockPaperScissor(player1, player2) {
 
         return "Jogador 1 venceu!";
 
-    } else {
+    } else { 
 
         return "Jogador 2 venceu!";
     }
