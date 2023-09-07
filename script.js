@@ -3,19 +3,19 @@
 // Michael kuhne de lima
 
 function playRockPaperScissor(player1, player2) {
+   
+    let pedra = "Pedra";
+    let papel = "Papel";
+    let tesoura = "Tesoura";
 
-    if (player1 === "Pedra" && player1 === "Papel" && player1 === "Tesoura" ||
-        player2 === "Pedra" && player2 === "Papel" && player2 === "Tesoura") {
-        return true;
-    }
 
     if (player1 === player2) {
         return "Empate!";
 
     } else if (
-        (player1 === "Pedra" && player2 === "Tesoura") ||
-        (player1 === "Tesoura" && player2 === "Papel") ||
-        (player1 === "Papel" && player2 === "Pedra")
+        (player1 === `${pedra}` && player2 === `${tesoura}`) ||
+        (player1 === `${tesoura}` && player2 === `${papel}`) ||
+        (player1 === `${papel}` && player2 === `${pedra}`)
     ) {
 
         return "Jogador 1 venceu!";
